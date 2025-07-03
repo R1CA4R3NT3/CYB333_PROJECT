@@ -10,7 +10,6 @@ Script Objectives
 - Offer a --dry-run mode to simulate actions without making real changes
 
 Key Features
-- Feature                     - Description | 
 - SSH Key Authentication      - Uses one or more .pem or private key files to securely log in to remote machines without passwords. 
 - Retry Mechanism             - Attempts multiple retries per host and private key, with exponential backoff if a connection fails.  
 - Logging                     - Writes structured logs with timestamps to a firewall_setup_<timestamp>.log file.  

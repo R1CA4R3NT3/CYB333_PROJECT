@@ -19,27 +19,23 @@ Key Features
 - Modular & Scalable          - Reads hostnames/IPs from a text file; easy to extend across dozens of servers.  
 
 Setup Instructions
-      1. Install Prerequisites
-          -Make sure Python 3.6+ is installed. Then install the required Python libraries:
-              paramiko, time, logging, argparse, pyufw, datetime, path          
-      2. Prepare SSH Keys
-      3. Ensure private key files exist and are accessible:
-            They must match public keys added to the remote servers’ `~/.ssh/authorized_keys` files. 
-      4. Create servers.txt (This file should be in the same directory as your script and contain one IP address or hostname per line)
-      5. Make sure each host:
-            - Is online and reachable over SSH (port 22)
-            - Has your public key authorized
-            - Allows `sudo ufw` commands
-      6. **Configure Your Username**
-            Edit the line in your script:
-                python - username = "your_ssh_user"
-            Change `"your_ssh_user"` to match the user allowed to log in via SSH, such as `azureuser`, `ubuntu`, or `ec2-user`.
+1. Install the following prerequisites and dependencies;
+	-Make sure Python 3.6+ is installed. Then install the required Python libraries:
+		paramiko, time, logging, argparse, pyufw, datetime, path          
+2. Prepare SSH Keys
+3. Ensure private key files exist and are accessible:
+	They must match public keys added to the remote servers’ `~/.ssh/authorized_keys` files. 
+4. Create servers.txt (This file should be in the same directory as your script and contain one IP address or hostname per line)
+5. Make sure each host:
+- Is online and reachable over SSH (port 22)
+- Has your public key authorized
+- Allows `sudo ufw` commands
+6. **Configure Your Username**
+	Edit the line in your script:
+	python - username = "your_ssh_user"
+	Change `"your_ssh_user"` to match the user allowed to log in via SSH, such as `azureuser`, `ubuntu`, or `ec2-user`.
 
 How to Run the Script
 
 From the terminal:  AUTO_MULTI_SERVER_FRWL_MGR.py
 
-Lists any dependencies or prerequisites.
-	Offers any additional information necessary for understanding your project.
-	Include a detailed README.md file that:
-Security Automation Project
